@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="853f0deb-5d26-4fd8-a160-c040d01b52bf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cishyF/algorithms/InsertionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cishyF/algorithmsTests/InsertionSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cishyF/algorithms/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cishyF/algorithms/sorting/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cishyF/algorithmsTests/InsertionSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cishyF/algorithmsTests/InsertionSortTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +40,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager" selected="JUnit.InsertionSortTest">
@@ -51,7 +56,7 @@
       <module name="algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cishyF.algorithmsTests.*" />
+          <option name="PATTERN" value="com.cishyF.algorithmsTests.InsertionSortTest" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -62,27 +67,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertionSortTest.arrayOfTwoElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cishyF.algorithmsTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cishyF.algorithmsTests" />
-      <option name="MAIN_CLASS_NAME" value="com.cishyF.algorithmsTests.InsertionSortTest" />
-      <option name="METHOD_NAME" value="arrayOfTwoElements" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="InsertionSortTest.arrayOfTwoElementsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cishyF.algorithmsTests.*" />
+          <option name="PATTERN" value="com.cishyF.algorithmsTests.InsertionSortTest" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,11 +83,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InsertionSortTest.emptyArrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cishyF.algorithmsTests.InsertionSortTest" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cishyF.algorithmsTests" />
+      <option name="MAIN_CLASS_NAME" value="com.cishyF.algorithmsTests.InsertionSortTest" />
+      <option name="METHOD_NAME" value="emptyArrayTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InsertionSortTest.nullTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cishyF.algorithmsTests.InsertionSortTest" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cishyF.algorithmsTests" />
+      <option name="MAIN_CLASS_NAME" value="com.cishyF.algorithmsTests.InsertionSortTest" />
+      <option name="METHOD_NAME" value="nullTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InsertionSortTest.randomTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cishyF.algorithmsTests.*" />
+          <option name="PATTERN" value="com.cishyF.algorithmsTests.InsertionSortTest" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,29 +131,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertionSortTest.zeroElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cishyF.algorithmsTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cishyF.algorithmsTests" />
-      <option name="MAIN_CLASS_NAME" value="com.cishyF.algorithmsTests.InsertionSortTest" />
-      <option name="METHOD_NAME" value="zeroElements" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.InsertionSortTest" />
+        <item itemvalue="JUnit.InsertionSortTest.nullTest" />
         <item itemvalue="JUnit.InsertionSortTest.randomTests" />
+        <item itemvalue="JUnit.InsertionSortTest.emptyArrayTest" />
         <item itemvalue="JUnit.InsertionSortTest.arrayOfTwoElementsTest" />
-        <item itemvalue="JUnit.InsertionSortTest.arrayOfTwoElements" />
-        <item itemvalue="JUnit.InsertionSortTest.zeroElements" />
       </list>
     </recent_temporary>
   </component>
@@ -145,6 +150,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680635056994</updated>
       <workItem from="1680635059666" duration="3141000" />
+      <workItem from="1680969314740" duration="2366000" />
     </task>
     <servers />
   </component>

@@ -1,8 +1,11 @@
-package com.cishyF.algorithms;
+package com.cishyF.algorithms.sorting;
 
 public final class InsertionSort {
 
-     public static <T extends Comparable> T[] sort(T[] arr) {
+     public static <T extends Comparable> void sort(T[] arr) {
+
+         if (arr == null)
+             return;
 
         for (int j = 1; j < arr.length; j++) {
             T key = arr[j];
@@ -13,7 +16,5 @@ public final class InsertionSort {
             }
             arr[i + 1] = key;
         }
-
-        return arr;
     }
 }

@@ -1,21 +1,28 @@
 package com.cishyF.algorithmsTests;
 
-import com.cishyF.algorithms.InsertionSort;
+import com.cishyF.algorithms.sorting.InsertionSort;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.stream.DoubleStream;
-import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class InsertionSortTest {
 
     @Test
+    public void nullTest() {
+
+        InsertionSort.sort(null);
+    }
+
+    @Test
     public void emptyArrayTest() {
          Integer[] emptyArray = {};
-         Integer[] arrayAfterSorting = InsertionSort.sort(emptyArray.clone());
+
+         Integer[] arrayAfterSorting = emptyArray.clone();
+         InsertionSort.sort(arrayAfterSorting);
 
          assertArrayEquals(emptyArray, arrayAfterSorting);
     }
@@ -25,7 +32,9 @@ public class InsertionSortTest {
         double randomElement = Math.random() * 1000;
 
         Double[] arrayOfOneElement = {randomElement};
-        Double[] arrayAfterSorting = InsertionSort.sort(arrayOfOneElement.clone());
+
+        Double[] arrayAfterSorting = arrayOfOneElement.clone();
+        InsertionSort.sort(arrayAfterSorting);
 
         assertArrayEquals(arrayOfOneElement, arrayAfterSorting);
     }
@@ -36,7 +45,8 @@ public class InsertionSortTest {
         String s2 = "bca";
 
         String[] arrayOfTwoElements = {s2, s1};
-        String[] arrayAfterSorting = InsertionSort.sort(arrayOfTwoElements.clone());
+        String[] arrayAfterSorting = arrayOfTwoElements.clone();
+        InsertionSort.sort(arrayAfterSorting);
 
         String[] correctArray = {s1, s2};
 
@@ -50,9 +60,11 @@ public class InsertionSortTest {
                                            .boxed()
                                            .toArray(Double[]::new);
 
-        Double[] arrayAfterSorting = InsertionSort.sort(randomArray.clone());
+        Double[] arrayAfterSorting = randomArray.clone();
+        InsertionSort.sort(arrayAfterSorting);
 
-        Double[] correctArray = Arrays.stream(randomArray.clone()).sorted().toArray(Double[]::new);
+        Double[] correctArray = randomArray.clone();
+        Arrays.sort(correctArray);
 
         assertArrayEquals(arrayAfterSorting, correctArray);
     }
