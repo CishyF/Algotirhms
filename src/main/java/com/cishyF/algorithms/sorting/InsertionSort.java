@@ -1,8 +1,19 @@
 package com.cishyF.algorithms.sorting;
 
-public final class InsertionSort {
+public final class InsertionSort implements SortingAlgorithm {
 
-     public static <T extends Comparable> void sort(T[] arr) {
+    private static SortingAlgorithm instance;
+
+    private InsertionSort() {}
+
+    public static SortingAlgorithm getInstance() {
+        if (instance == null)
+            instance = new InsertionSort();
+        return instance;
+    }
+
+    @Override
+    public <T extends Comparable> void sort(T[] arr) {
 
          if (arr == null)
              return;

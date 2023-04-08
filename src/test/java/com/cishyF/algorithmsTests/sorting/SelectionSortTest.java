@@ -1,6 +1,7 @@
-package com.cishyF.algorithmsTests;
+package com.cishyF.algorithmsTests.sorting;
 
-import com.cishyF.algorithms.sorting.InsertionSort;
+import com.cishyF.algorithms.sorting.SelectionSort;
+import com.cishyF.algorithms.sorting.SortingAlgorithm;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
@@ -9,22 +10,24 @@ import java.util.stream.DoubleStream;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-public class InsertionSortTest {
+public class SelectionSortTest implements SortTestRequirements {
+
+    private static final SortingAlgorithm SELECTION_SORT = SelectionSort.getInstance();
 
     @Test
     public void nullTest() {
 
-        InsertionSort.sort(null);
+        SELECTION_SORT.sort(null);
     }
 
     @Test
     public void emptyArrayTest() {
-         Integer[] emptyArray = {};
+        Integer[] emptyArray = {};
 
-         Integer[] arrayAfterSorting = emptyArray.clone();
-         InsertionSort.sort(arrayAfterSorting);
+        Integer[] arrayAfterSorting = emptyArray.clone();
+        SELECTION_SORT.sort(arrayAfterSorting);
 
-         assertArrayEquals(emptyArray, arrayAfterSorting);
+        assertArrayEquals(emptyArray, arrayAfterSorting);
     }
 
     @Test
@@ -34,7 +37,7 @@ public class InsertionSortTest {
         Double[] arrayOfOneElement = {randomElement};
 
         Double[] arrayAfterSorting = arrayOfOneElement.clone();
-        InsertionSort.sort(arrayAfterSorting);
+        SELECTION_SORT.sort(arrayAfterSorting);
 
         assertArrayEquals(arrayOfOneElement, arrayAfterSorting);
     }
@@ -46,22 +49,22 @@ public class InsertionSortTest {
 
         String[] arrayOfTwoElements = {s2, s1};
         String[] arrayAfterSorting = arrayOfTwoElements.clone();
-        InsertionSort.sort(arrayAfterSorting);
+        SELECTION_SORT.sort(arrayAfterSorting);
 
         String[] correctArray = {s1, s2};
 
         assertArrayEquals(arrayAfterSorting, correctArray);
     }
 
-    @RepeatedTest(15)
+    @RepeatedTest(30)
     public void randomTests() {
         Double[] randomArray = DoubleStream.generate(() -> Math.random() * 1000)
-                                           .limit(10000)
-                                           .boxed()
-                                           .toArray(Double[]::new);
+                .limit(10000)
+                .boxed()
+                .toArray(Double[]::new);
 
         Double[] arrayAfterSorting = randomArray.clone();
-        InsertionSort.sort(arrayAfterSorting);
+        SELECTION_SORT.sort(arrayAfterSorting);
 
         Double[] correctArray = randomArray.clone();
         Arrays.sort(correctArray);
@@ -70,3 +73,4 @@ public class InsertionSortTest {
     }
 
 }
+
