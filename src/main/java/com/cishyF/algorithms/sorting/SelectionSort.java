@@ -13,7 +13,7 @@ public final class SelectionSort implements SortingAlgorithm {
     }
 
     @Override
-    public <T extends Comparable> void sort(T[] arr) {
+    public <T extends Comparable<T>> void sort(T[] arr) {
 
         if (arr == null)
             return;
@@ -28,5 +28,10 @@ public final class SelectionSort implements SortingAlgorithm {
             arr[i] = arr[minIndex];
             arr[minIndex] = value;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "SelectionSort";
     }
 }

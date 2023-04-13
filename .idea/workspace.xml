@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="853f0deb-5d26-4fd8-a160-c040d01b52bf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cishyF/algorithms/sorting/SelectionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cishyF/algorithms/sorting/SortingAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cishyF/algorithmsTests/sorting/SelectionSortTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cishyF/algorithmsTests/sorting/SortTestRequirements.java" afterDir="false" />
+    <list default="true" id="853f0deb-5d26-4fd8-a160-c040d01b52bf" name="Changes" comment="Добавлен новый алгоритм 'Сортировка выбором (Selection sort)' и тестов к нему.&#10;Добавление интерфейсов для алгоритмов сортировки и их тестов">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cishyF/algorithms/sorting/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cishyF/algorithms/sorting/InsertionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cishyF/algorithmsTests/InsertionSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cishyF/algorithmsTests/sorting/InsertionSortTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,8 +159,16 @@
       <workItem from="1680969314740" duration="2366000" />
       <workItem from="1680973944889" duration="5370000" />
       <workItem from="1680979528406" duration="452000" />
-      <workItem from="1680980026683" duration="433000" />
+      <workItem from="1680980026683" duration="1672000" />
     </task>
+    <task id="LOCAL-00001" summary="Добавлен новый алгоритм 'Сортировка выбором (Selection sort)' и тестов к нему&#10;Добавление интерфейсов для алгоритмов сортировки и их тестов">
+      <created>1680980756212</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680980756212</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +184,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Добавлен новый алгоритм 'Сортировка выбором (Selection sort)' и тестов к нему.&#10;Добавление интерфейсов для алгоритмов сортировки и их тестов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен новый алгоритм 'Сортировка выбором (Selection sort)' и тестов к нему.&#10;Добавление интерфейсов для алгоритмов сортировки и их тестов" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

@@ -13,7 +13,7 @@ public final class InsertionSort implements SortingAlgorithm {
     }
 
     @Override
-    public <T extends Comparable> void sort(T[] arr) {
+    public <T extends Comparable<T>> void sort(T[] arr) {
 
          if (arr == null)
              return;
@@ -27,5 +27,10 @@ public final class InsertionSort implements SortingAlgorithm {
             }
             arr[i + 1] = key;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "InsertionSort";
     }
 }
