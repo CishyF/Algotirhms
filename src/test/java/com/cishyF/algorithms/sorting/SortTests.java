@@ -1,9 +1,5 @@
-package com.cishyF.algorithmsTests.sorting;
+package com.cishyF.algorithms.sorting;
 
-import com.cishyF.algorithms.sorting.InsertionSort;
-import com.cishyF.algorithms.sorting.MergeSort;
-import com.cishyF.algorithms.sorting.SelectionSort;
-import com.cishyF.algorithms.sorting.SortingAlgorithm;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.function.ThrowingConsumer;
 

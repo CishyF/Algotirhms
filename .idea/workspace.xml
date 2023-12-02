@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="853f0deb-5d26-4fd8-a160-c040d01b52bf" name="Changes" comment="Добавлен новый алгоритм 'Сортировка выбором (Selection sort)' и тестов к нему.&#10;Добавление интерфейсов для алгоритмов сортировки и их тестов">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cishyF/algorithms/finding/MaxSubarrayFind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cishyF/algorithms/finding/MaxSubarrayRecursiveFind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cishyF/algorithms/finding/SubarrayInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cishyF/algorithms/finding/MaxSubarrayFindTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cishyF/algorithms/finding/MaxSubarrayRecursiveFindTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cishyF/algorithmsTests/sorting/SortTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cishyF/algorithms/sorting/SortTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cishyF/algorithmsTests/sorting/SortTestsRequirements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cishyF/algorithms/sorting/SortTestsRequirements.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +34,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2NySumuAIh0lJ9PWcYAAtf6ymUJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -49,76 +60,80 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.InsertionSortTest">
-    <configuration name="SortingTestsRun" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cishyF.algorithmsTests.sorting.SortingTestsRun" />
-      <module name="Algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cishyF.algorithmsTests.sorting.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InsertionSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MaxSubarrayFindTests">
+    <configuration name="MaxSubarrayFindTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cishyF.algorithmsTests.sorting.*" />
+          <option name="PATTERN" value="com.cishyF.algorithms.finding.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.cishyF.algorithmsTests.sorting" />
-      <option name="MAIN_CLASS_NAME" value="com.cishyF.algorithmsTests.sorting.InsertionSortTest" />
+      <option name="PACKAGE_NAME" value="com.cishyF.algorithms.finding" />
+      <option name="MAIN_CLASS_NAME" value="com.cishyF.algorithms.finding.MaxSubarrayFindTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectionSortTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MaxSubarrayRecursiveFindTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cishyF.algorithmsTests.sorting.*" />
+          <option name="PATTERN" value="com.cishyF.algorithms.finding.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.cishyF.algorithmsTests.sorting" />
-      <option name="MAIN_CLASS_NAME" value="com.cishyF.algorithmsTests.sorting.SelectionSortTest" />
+      <option name="PACKAGE_NAME" value="com.cishyF.algorithms.finding" />
+      <option name="MAIN_CLASS_NAME" value="com.cishyF.algorithms.finding.MaxSubarrayRecursiveFindTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MaxSubarrayRecursiveFindTests.shouldReturnFullArrayIfContainsOnlyPositive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cishyF.algorithmsTests.sorting.*" />
+          <option name="PATTERN" value="com.cishyF.algorithms.finding.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.cishyF.algorithmsTests.sorting" />
-      <option name="MAIN_CLASS_NAME" value="com.cishyF.algorithmsTests.sorting.SortTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.cishyF.algorithms.finding" />
+      <option name="MAIN_CLASS_NAME" value="com.cishyF.algorithms.finding.MaxSubarrayRecursiveFindTests" />
+      <option name="METHOD_NAME" value="shouldReturnFullArrayIfContainsOnlyPositive" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortingTestsRun.runTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Algorithms" />
+    <configuration name="MaxSubarrayRecursiveFindTests.shouldReturnMaxSubarray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cishyF.algorithmsTests.sorting.*" />
+          <option name="PATTERN" value="com.cishyF.algorithms.finding.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.cishyF.algorithmsTests.sorting" />
-      <option name="MAIN_CLASS_NAME" value="com.cishyF.algorithmsTests.sorting.SortingTestsRun" />
-      <option name="METHOD_NAME" value="runTests" />
+      <option name="PACKAGE_NAME" value="com.cishyF.algorithms.finding" />
+      <option name="MAIN_CLASS_NAME" value="com.cishyF.algorithms.finding.MaxSubarrayRecursiveFindTests" />
+      <option name="METHOD_NAME" value="shouldReturnMaxSubarray" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxSubarrayRecursiveFindTests.shouldReturnMinElementIfArrayContainsOnlyNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cishyF.algorithms.finding.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cishyF.algorithms.finding" />
+      <option name="MAIN_CLASS_NAME" value="com.cishyF.algorithms.finding.MaxSubarrayRecursiveFindTests" />
+      <option name="METHOD_NAME" value="shouldReturnMinElementIfArrayContainsOnlyNegative" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.InsertionSortTest" />
-        <item itemvalue="JUnit.SelectionSortTest (1)" />
-        <item itemvalue="JUnit.SortTest" />
-        <item itemvalue="Application.SortingTestsRun" />
-        <item itemvalue="JUnit.SortingTestsRun.runTests" />
+        <item itemvalue="JUnit.MaxSubarrayFindTests" />
+        <item itemvalue="JUnit.MaxSubarrayRecursiveFindTests" />
+        <item itemvalue="JUnit.MaxSubarrayRecursiveFindTests.shouldReturnMaxSubarray" />
+        <item itemvalue="JUnit.MaxSubarrayRecursiveFindTests.shouldReturnMinElementIfArrayContainsOnlyNegative" />
+        <item itemvalue="JUnit.MaxSubarrayRecursiveFindTests.shouldReturnFullArrayIfContainsOnlyPositive" />
       </list>
     </recent_temporary>
   </component>
@@ -160,6 +175,17 @@
       <workItem from="1680973944889" duration="5370000" />
       <workItem from="1680979528406" duration="452000" />
       <workItem from="1680980026683" duration="1672000" />
+      <workItem from="1683713458997" duration="6000" />
+      <workItem from="1688987763968" duration="18000" />
+      <workItem from="1695046073259" duration="603000" />
+      <workItem from="1695071818315" duration="1000" />
+      <workItem from="1695071840973" duration="353000" />
+      <workItem from="1695072221165" duration="134000" />
+      <workItem from="1695072764033" duration="398000" />
+      <workItem from="1695138709886" duration="372000" />
+      <workItem from="1695139118783" duration="172000" />
+      <workItem from="1695139700368" duration="3000" />
+      <workItem from="1701510294739" duration="5355000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлен новый алгоритм 'Сортировка выбором (Selection sort)' и тестов к нему&#10;Добавление интерфейсов для алгоритмов сортировки и их тестов">
       <created>1680980756212</created>

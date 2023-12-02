@@ -1,6 +1,4 @@
-package com.cishyF.algorithmsTests.sorting;
-
-import com.cishyF.algorithms.sorting.SortingAlgorithm;
+package com.cishyF.algorithms.sorting;
 
 public interface SortTestsRequirements {
 
